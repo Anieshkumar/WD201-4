@@ -24,11 +24,7 @@ describe("Todolist test suite", () => {
   test("creating a new todo", () => {
     const todoItemsCount = all.length;
     expect(all.length).toBe(todoItemsCount);
-    add({
-      title: "Aniesh home work",
-      dueDate: today,
-      completed: false,
-    });
+    add({ title: "Aniesh home work", dueDate: today, completed: false });
     expect(all.length).toBe(todoItemsCount + 1);
   });
 

@@ -25,7 +25,7 @@ const todoList = () => {
       .map((todos) => {
         const complete = todos.completed ? "x" : " ";
         return `[${complete}] ${todos.title} ${
-          todos.dueDate == today ? " " : todos.dueDate
+          todos.dueDate == today ? "" : todos.dueDate
         }`;
       })
       .join("\n");
